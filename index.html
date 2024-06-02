@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricetable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: "Jaro", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h2{
+            color: #003285;
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .pricing-container{
+            display: flex;
+            gap: 50px;
+        }
+
+        .pricing-container>.pricing-plan{
+            background-color: #DAD3BE;
+            border: 10px solid #987070;
+            border-width: 50px 0px;
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .plan-features{
+            list-style: none;
+            padding: 0;
+        }
+
+        .plan-button{
+            background-color: #E1AFD1;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        body{
+            font-family: "Sono", sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        @media(max-width: 1250px){
+            .pricing-container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pricing-container>.pricing-plan{
+                width: 100%;
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media(max-width: 600px){
+            h1{
+                font-size: 24px;
+            }
+
+            h2{
+                font-size: 20px;
+            }
+
+            .plan-button{
+                padding: 8px 16px;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-plan">
+            <div class="plan-title"><h2>Basic</h2></div>
+            <div class="plan-price"><h1>$9.99/month</h1></div>
+            <ul class="plan-features">
+                <li>&#9989; 10GB storage</li>
+                <li>&#9989; 1 user</li>
+                <li>&#x1F6AB; Support</li>
+            </ul>
+            <button class="plan-button">Sign Up</button>
+        </div>
+
+        <div class="pricing-plan">
+            <div class="plan-title"><h2>Standard</h2></div>
+            <div class="plan-price"><h1>$19.99/month</h1></div>
+            <ul class="plan-features">
+                <li>&#9989; 50GB storage</li>
+                <li>&#9989; 5 Users</li>
+                <li>&#9989; Phone & Email Support</li>
+            </ul>
+            <button class="plan-button">Sign Up</button>
+        </div>
+
+        <div class="pricing-plan">
+            <div class="plan-title"><h2>Premium</h2></div>
+            <div class="plan-price"><h1>$49.99/month</h1></div>
+            <ul class="plan-features">
+                <li>&#9989; 100GB storage</li>
+                <li>&#9989; 10 Users</li>
+                <li>&#9989; 24/7 Support</li>
+            </ul>
+            <button class="plan-button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
